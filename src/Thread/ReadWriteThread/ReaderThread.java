@@ -18,13 +18,13 @@ public class ReaderThread implements Runnable {
     public void run() {
         while (true) {
             try {
-                //receive from server..
+                //receive from server.
                 Object received = ois.readObject();
-//                if(received!=null)
-                System.out.println(Name + " Got: " + (String) received);
-
+                if(received!=null) {
+                    System.out.println(Name + " Got: " + (String) received);
+                }
             } catch (ClassNotFoundException | IOException e) {
-//                e.printStackTrace();
+                e.printStackTrace();
             }
         }
     }

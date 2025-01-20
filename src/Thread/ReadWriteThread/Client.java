@@ -17,7 +17,7 @@ public class Client {
 
         new WriterThread(oos, "Client1");
         new ReaderThread(ois, "Client1");
-//        socket.close();
+        socket.close();
 
     }
 }

@@ -22,7 +22,7 @@ public class WriterThread implements Runnable {
                 oos.writeObject(message);
                 System.out.println("Message Sent...");
             } catch (IOException e) {
-//                e.printStackTrace();
+                e.printStackTrace();
             }
         }
     }
